@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MDHud_Example' do
+  pod 'MDHud', :path => '../'
+
+  target 'MDHud_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
