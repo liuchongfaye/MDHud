@@ -1,0 +1,23 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - MDHud (0.1.0):
+    - MBProgressHUD
+
+DEPENDENCIES:
+  - MDHud (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  MDHud:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MDHud: 75bb89f7d176a90d6f1059c20371700474e9e79b
+
+PODFILE CHECKSUM: 82a0c07292682e958417c96d63931c5e13028aa2
+
+COCOAPODS: 1.8.4

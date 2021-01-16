@@ -57,8 +57,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		60894D0D8DD7CD0C3F4F7005 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		66C2D229EC0DBB1335D2169F /* MDHud.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MDHud.podspec; path = ../MDHud.podspec; sourceTree = "<group>"; };
+		60894D0D8DD7CD0C3F4F7005 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		66C2D229EC0DBB1335D2169F /* MDHud.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MDHud.podspec; path = ../MDHud.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		69AE93016015902929F0773D /* Pods-MDHud_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHud_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MDHud_Tests/Pods-MDHud_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72945510E4BE2639B7751E8F /* Pods-MDHud_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHud_Tests.release.xcconfig"; path = "Target Support Files/Pods-MDHud_Tests/Pods-MDHud_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		8B1EC09EBB74C1921CBCCBB1 /* Pods-MDHud_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHud_Example.release.xcconfig"; path = "Target Support Files/Pods-MDHud_Example/Pods-MDHud_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8BBA3C6EDBB45BF87845F31C /* Pods-MDHud_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHud_Example.debug.xcconfig"; path = "Target Support Files/Pods-MDHud_Example/Pods-MDHud_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0FF9AC5B05A225C243BF043 /* Pods_MDHud_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDHud_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D75686C4FADE790B697D94C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D75686C4FADE790B697D94C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				69AE93016015902929F0773D /* Pods-MDHud_Tests.debug.xcconfig */,
 				72945510E4BE2639B7751E8F /* Pods-MDHud_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MDHud_Example/Pods-MDHud_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MDHud/MDHud.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHud.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
